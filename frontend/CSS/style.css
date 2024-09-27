@@ -32,6 +32,8 @@ p {
 
 /* Navigation Bar */
 .navbar {
+  position: fixed;
+  width: 100vw;
   background: #2980b9;
   color: #fff;
   padding: 15px 0;
@@ -39,8 +41,10 @@ p {
 
 .navbar .logo h1 {
   display: inline;
-  font-size: 24px;
-  margin-left: 20px;
+  color: whitesmoke;
+  font-size: 42px;
+  margin: 20px;
+  padding: 40px;
 }
 
 .navbar .nav-links {
@@ -74,6 +78,7 @@ p {
 }
 
 .hero-content {
+  margin-top: 100px;
   flex: 1;
 }
 
@@ -350,11 +355,14 @@ p {
 /* Footer */
 .footer {
   background: #2c3e50;
-  color: #fff;
+  color: #ffffff;
   padding: 20px 0;
   text-align: center;
 }
 
+.footer .container p{
+  color: white;
+}
 .footer .social-links a {
   color: #fff;
   margin: 0 10px;
