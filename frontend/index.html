@@ -1,14 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Management System</title>
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Student Management System</title>
-  </head>
-  <body>
-    <h1>STUDENT MANAGEMENT SYSTEM</h1>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6eNq4+2QC2t0l2Aq4Mlv1AxeH3WtT9v+XU6Qn3E3p5W6H3aBwQOQrq5LrXKryXrhxwCdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>SmartSMS</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transforming Education with Smart Student Management</h2>
+                <p>Streamline your classroom operations, enhance communication, and foster an interactive learning environment with our innovative Student Management System.</p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Smart Student Management System">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <i class="fas fa-file-upload"></i>
+                    <h3>Document Management</h3>
+                    <p>Upload and organize class materials seamlessly for easy access by students.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Real-Time Note Generation</h3>
+                    <p>Convert spoken lectures into text notes instantly, highlighting important points.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Attendance & Grade Tracking</h3>
+                    <p>Automate attendance records and manage student grades with ease.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Communication Tools</h3>
+                    <p>Facilitate better interaction between teachers, students, and parents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2>Benefits</h2>
+            <div class="benefit-items">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Enhanced Efficiency</h3>
+                    <p>Automate administrative tasks to save time and reduce errors.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Data Security</h3>
+                    <p>Ensure the safety and privacy of student information with robust security measures.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Accessibility</h3>
+                    <p>Access the system from any device, anytime, anywhere.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Gain insights with detailed analytics and generate comprehensive reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-upload"></i>
+                    <h3>Upload Documents</h3>
+                    <p>Teachers upload the day's materials and documents to the system before class.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3>Real-Time Note Taking</h3>
+                    <p>During the lecture, teachers use the microphone feature to capture key points, which are converted into notes automatically.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-notes-medical"></i>
+                    <h3>Access Notes</h3>
+                    <p>Students access the notes and documents through the "Today's Lecture" section for review and study.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Track Progress</h3>
+                    <p>Administrators and teachers can monitor attendance, grades, and overall student performance with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"SmartSMS has revolutionized the way I manage my classroom. The real-time note generation is a game-changer!"</p>
+                    <h4>- Mrs. Johnson, High School Teacher</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The communication tools have greatly improved my interaction with both students and parents. Highly recommended!"</p>
+                    <h4>- Mr. Smith, School Administrator</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Managing grades and attendance has never been easier. This system saves me so much time!"</p>
+                    <h4>- Ms. Lee, College Professor</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Smart Student Management System. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

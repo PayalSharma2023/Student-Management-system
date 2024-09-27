@@ -1,11 +1,411 @@
-*{
+/* Reset CSS */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  height: 100%;
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #2980b9;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.navbar .logo h1 {
+  display: inline;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  color: #ecf0f1;
+}
+
+/* Hero Section */
+.hero {
+  background: #ecf0f1 url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: #2c3e50;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #2980b9;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1f6391;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background: #f8f9fa;
+  flex: 0 0 48%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card i {
+  font-size: 40px;
+  color: #2980b9;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 60px 0;
+  background: #f1f2f6;
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.benefit-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefit-item {
+  background: #fff;
+  flex: 0 0 48%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.benefit-item i {
+  font-size: 30px;
+  color: #27ae60;
+  margin-right: 15px;
+}
+
+.benefit-item h3 {
+  margin-bottom: 5px;
+}
+
+.benefit-item p {
+  color: #555;
+}
+
+.benefit-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.step {
+  background: #f8f9fa;
+  flex: 0 0 23%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.step i {
+  font-size: 30px;
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #555;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 0;
+  background: #ecf0f1;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonial-card {
+  background: #fff;
+  flex: 0 0 30%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  text-align: right;
+  color: #2980b9;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+  background: #f1f2f6;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
   width: 100%;
-  background-color: black;
-  color: white;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+.contact-form .btn {
+  display: block;
+  width: 100%;
+  background: #2980b9;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background: #1f6391;
+}
+
+/* Footer */
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .feature-cards, .benefit-items, .steps, .testimonial-cards {
+      flex-direction: column;
+  }
+
+  .card, .benefit-item, .step, .testimonial-card {
+      flex: 0 0 100%;
+  }
+
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-image img {
+      width: 100%;
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar .nav-links {
+      display: none;
+  }
+
+  .navbar .logo h1 {
+      margin-left: 0;
+  }
+
+  .hero-content h2 {
+      font-size: 32px;
+  }
+
+  .hero-content p {
+      font-size: 16px;
+  }
+
+  .steps, .feature-cards, .benefit-items, .testimonial-cards {
+      padding: 0;
+  }
 }
