@@ -1,0 +1,12 @@
+npm create vite@latest
+
+fork repository
+git clone repository url
+
+1. cd backend / cd frontend
+
+2. npm i 
+
+cd ../ 
+
+3. npm run dev
