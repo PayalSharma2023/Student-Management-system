@@ -10,3 +10,33 @@ git clone repository url
 cd ../ 
 
 3. npm run dev
+
+Proxy Setup for Development: 
+To simplify API calls and avoid CORS issues during development,
+ you can set up a proxy in vite.config.js:
+
+ backend: npm i express cors dotenv body-parser 
+ npm i --save-dev nodemon
+
+express: Web framework for Node.js.
+cors: Middleware to enable CORS.
+body-parser: Middleware to parse request bodies.
+dotenv: For environment variable management.
+nodemon: Development tool for automatically restarting the server on changes.
+
+setup SQL Database
+npm i mysql2/pg
+
+.env
+
+Setup Scripts in package.json:
+
+json
+Copy code
+// backend/package.json
+{
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
+}
