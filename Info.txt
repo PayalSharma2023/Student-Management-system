@@ -40,3 +40,12 @@ Copy code
     "dev": "nodemon server.js"
   }
 }
+
+Serve Frontend from Backend
+1. Build Frontend:
+
+cd your-project/frontend
+npm run build
+This generates static files in the dist folder.
+
+2. Serve Static Files in Express:
